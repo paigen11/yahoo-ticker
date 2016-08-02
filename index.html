@@ -40,22 +40,18 @@
 						<button type="submit" class="btn btn-primary">Get my quotes!</button>	
 					</form>
 					<br>
-					<div class="local-store">
-						<button type="text" class="btn btn-success">Save my quotes</button>
-					</div>
-					<br>
-					<div class="retrieve">
-						<button type="text" class="btn btn-success">Retrieve my quotes</button>
-					</div>
-					<br>
-					<div class="clear">
-						<button type="text" class="btn btn-danger">Clear my quotes</button>
+					<div class="btn-group">
+						<button class="btn btn-default" disabled>Saved Stock Symbols</button>
+						<button class="btn btn-default number-of-symbols" disabled>0</button>
+						<button class="btn btn-warning retrieve-button">Retrieve</button>
+						<button class="btn btn-danger reset-save">Clear All</button>
 					</div>
 					<hr>
 
 					<table class="table table-striped table-bordered">
 						<thead>
 							<tr>
+								<th>Save</th>
 								<th>Stock Symbol</th>
 								<th>Company Name</th>
 								<th>Ask Price</th>
@@ -63,6 +59,7 @@
 								<th>Daily Change</th>
 							</tr>	
 						</thead>
+						<hr>
 						<tbody class="yahoo-body">
 							<tr>
 								<td></td>
@@ -70,10 +67,36 @@
 								<td></td>
 								<td></td>
 								<td></td>
+								<td></td>
 							</tr>
-							
 						</tbody>
-					</table>
+					</table>		
+					<div class="col-sm-12 watchlist-wrapper">	
+						<hr />
+						<h2>Watchlist</h2>	
+						<table class="table table-striped table-bordered">
+							<thead>
+								<tr>
+									<th>Remove</th>
+									<th>Stock Symbol</th>
+									<th>Company Name</th>
+									<th>Ask Price</th>
+									<th>Bid Price</th>
+									<th>Daily Change</th>
+								</tr>	
+							</thead>
+							<tbody class="watch-body">
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
 			</div>
 		</div>
 	</div>
